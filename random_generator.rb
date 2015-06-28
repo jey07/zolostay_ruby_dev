@@ -8,5 +8,5 @@ end
 
 print "Please enter a name :"
 name=gets.chomp
-name.capitalize!
-input_name(name)
+name.capitalize! 
+/[^a-zA-Z +]/.match(name)? (puts "Exiting..") :( input_name(name)) 
