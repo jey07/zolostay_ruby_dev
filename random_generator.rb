@@ -9,4 +9,4 @@ end
 print "Please enter a name :"
 name=gets.chomp
 name.capitalize! 
-/[^a-zA-Z +]/.match(name)? (puts "Exiting..") :( input_name(name)) 
+/[^a-zA-Z +]/.match(name)? (puts "Please enter only alphabets.Exiting...") :( input_name(name)) 
